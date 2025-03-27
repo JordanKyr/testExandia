@@ -25,7 +25,9 @@ CREATE TABLE IF NOT EXISTS `students` (
   CONSTRAINT `GRADE_RANGE` CHECK (`GRADE` is null or `GRADE` >= 0 and `GRADE` <= 20)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Data exporting was unselected.
+-- Dumping data for table exandiadb.students: ~1 rows (approximately)
+INSERT INTO `students` (`S_ID`, `FIRST_NAME`, `LAST_NAME`, `GRADE`, `BIRTH_DATE`) VALUES
+	(1, 'NIKOS', 'PAPADOPOULOS', 16, '2000-03-03');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
